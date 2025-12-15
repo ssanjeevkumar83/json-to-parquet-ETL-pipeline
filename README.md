@@ -8,12 +8,14 @@ This project demonstrates an end-to-end Data Engineering ETL pipeline using AWS 
 ## Architecture
 **S3 (Source)** -> **AWS Lambda (Transform)** -> **S3 (Data Lake)** -> **AWS Glue (Catalog)** -> **Amazon Athena (Analyze)**
 
+```
 aws-etl-pipeline/
 ├── data/
 │   └── orders.json          # Sample input data
 ├── lambda_function.py       # Main ETL logic
 ├── README.md                # Documentation
 └── requirements.txt         # Dependencies (for local testing)
+```
 
 1.  **Ingest**: JSON files uploaded to S3 bucket (`incoming` folder).
 2.  **Trigger**: S3 Event Notification triggers AWS Lambda.
@@ -94,4 +96,5 @@ aws-etl-pipeline/
 * **AWS Lambda**: Compute & Transformation
 * **AWS Glue**: Data Cataloging
 * **Amazon Athena**: SQL Analytics
+
 * **Python**: Pandas, Boto3
