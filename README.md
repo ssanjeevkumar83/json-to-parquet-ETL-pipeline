@@ -37,7 +37,7 @@ aws-etl-pipeline/
 ## Step-by-Step Setup Guide
 
 ### Step 1: S3 Bucket Setup
-1.  Create a new S3 bucket (e.g., `namaste-sql-etl-project`).
+1.  Create a new S3 bucket (e.g., `sql-etl-project`).
 2.  Create two folders inside:
     * `orders_json_incoming/` (For raw data)
     * `orders_parquet_datalake/` (For transformed data)
@@ -98,3 +98,4 @@ aws-etl-pipeline/
 * **Amazon Athena**: SQL Analytics
 
 * **Python**: Pandas, Boto3
+
